@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Car } from 'src/app/models/car';
 
 @Component({
   selector: 'app-car',
@@ -11,7 +12,7 @@ export class CarComponent implements OnInit {
   car2: any = { carId: 2, modelYear: 2021, dailyPrice: 160, description: "Benzin" }
   car3: any = { carId: 3, modelYear: 2020, dailyPrice: 150, description: "Otomatik" }
 
-  cars = [this.car1, this.car2, this.car3]
+  cars:Car[] = [this.car1, this.car2, this.car3]
 
   constructor() { }
 
