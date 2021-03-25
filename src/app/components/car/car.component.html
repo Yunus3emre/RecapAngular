@@ -1,8 +1,10 @@
 <div class="container">
-  <table class="table table-hover">
+  <div *ngIf="dataLoaded==false" class="spinner-border text-danger" style="text-align:center; margin-left: auto; position: relative; left: 50%;margin-top:10%;" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <table *ngIf="dataLoaded==true" class="table table-hover">
     <thead>
       <tr>
-        
         <th scope="col">Araç kodu</th>
         <th scope="col">Model Yılı</th>
         <th scope="col">Ücret</th>
@@ -11,7 +13,6 @@
     </thead>
     <tbody>
       <tr *ngFor="let car of cars">
-        
         <td>{{ car.id }}</td>
         <td>{{ car.modelYear }}</td>
         <td>{{ car.dailyPrice }}</td>
