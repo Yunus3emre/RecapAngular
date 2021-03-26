@@ -6,6 +6,7 @@
     <thead>
       <tr>
         <th scope="col">Araç kodu</th>
+        <th scope="col">Marka</th>
         <th scope="col">Model Yılı</th>
         <th scope="col">Ücret</th>
         <th scope="col">Açıklama</th>
@@ -14,6 +15,7 @@
     <tbody>
       <tr *ngFor="let car of cars">
         <td>{{ car.id }}</td>
+        <td>{{ car.brandId }}</td>
         <td>{{ car.modelYear }}</td>
         <td>{{ car.dailyPrice }}</td>
         <td>{{ car.description }}</td>

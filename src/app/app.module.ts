@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { CarComponent } from './components/car/car.component';
 import { NaviComponent } from './components/navi/navi.component';
 import { CategoryComponent } from './components/category/category.component';
+import { BrandComponent } from './components/brand/brand.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarComponent,
     NaviComponent,
-    CategoryComponent    
+    CategoryComponent,
+    BrandComponent    
   ],
   imports: [
     BrowserModule,
