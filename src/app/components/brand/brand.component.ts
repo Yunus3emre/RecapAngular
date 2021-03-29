@@ -24,7 +24,6 @@ export class BrandComponent implements OnInit {
   }
   setCurrentBrand(brand:Brand){
     this.currentBrand=brand;
-    
   }
 
   getCurrentBrandClass(brand:Brand){
@@ -39,8 +38,6 @@ export class BrandComponent implements OnInit {
         return "list-group-item"
       }
     }
-    
-    
   }
 
   setAllBrand(){
