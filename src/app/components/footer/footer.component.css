@@ -1,0 +1,11 @@
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightslategray;
+    color: white;
+    text-align: center;
+  }
+  a{
+      color:white;
+  }

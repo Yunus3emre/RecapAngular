@@ -1,18 +1,9 @@
-<!-- Welcome to {{title}}<br>
-Hello {{user}}<br>
-{{car.modelYear}} -->
-
-<div class="container">
-  <app-navi></app-navi>
-  <div class="row">
-    <div class="col-md-3">
-      <app-brand></app-brand>
-      <app-color></app-color>
-    </div>
-   
-    <div class="col-md-9">
+<div>
+  <div class="container">
+    <app-navi></app-navi>
+    <div class="row">
       <router-outlet></router-outlet>
     </div>
   </div>
+  <app-footer></app-footer>
 </div>
-

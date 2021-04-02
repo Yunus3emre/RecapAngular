@@ -1,0 +1,44 @@
+<section class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light">Türkiye'de Araç Kiralama</h1>
+      <p class="lead text-muted">
+        Biliyoruz ki, araç kiralama bir lokasyondan diğerine seyahat etmekten
+        daha fazlasıdır. Eşsiz araç kiralama deneyimi için Recap'e hoş geldiniz!
+      </p>
+      
+      <button type="button" class="btn btn-primary btn-lg">Large button</button>
+      <button type="button" class="btn btn-secondary btn-lg">Large button</button>  
+    </div>
+  </div>
+</section>
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div *ngFor="let car of carDtos" class="col">
+        <div class="card shadow-sm">
+            <!-- <img [src]="getImage({{car.imgPath}})" class="card-img" alt="..." /> -->
+            <img src="https://mediaservice.audi.com/media/live/50900/fly1400x601n1/8yaar/2021.png?wid=850" alt="">
+          <div class="card-body">
+            <p class="card-text">
+              {{ car.brandName }},
+              {{car.colorName}},
+              {{car.description}},
+              {{ car.imgPath }}
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">
+                  Görüntüle
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-primary">
+                  Kirala
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

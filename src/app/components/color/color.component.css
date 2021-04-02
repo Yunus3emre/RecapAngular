@@ -1,0 +1,6 @@
+.pointer {cursor: pointer;}
+
+
+ul li {display: inline-block;}
+ul li:hover {background: #66ccff;}
+ul li:hover ul {display: block;}

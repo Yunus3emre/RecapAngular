@@ -15,6 +15,10 @@ export class CarComponent implements OnInit {
   cars: Car[] = []
   dataLoaded = false;
   filterText = "";
+  selectedOptionValue: string;
+  filterByBrandName: string;
+  filterByModelYear: string;
+  filterByColor: string;
 
   constructor(
     private carService: CarService,
@@ -35,7 +39,6 @@ export class CarComponent implements OnInit {
         this.getCars()
       }
     })
-
   }
 
   getCars() {
@@ -61,7 +64,5 @@ export class CarComponent implements OnInit {
 
   rent(car: Car) {
     this.toastrService.success("Kiralandı", car.description)
-
   }
-
 }

@@ -19,6 +19,9 @@ import { RentalComponent } from './components/rental/rental.component';
 import { CarAddComponent } from './components/car-add/car-add.component';
 import { LoginComponent } from './components/login/login.component';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
+import { CardtoComponent } from './components/cardto/cardto.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,9 @@ import { AuthInterceptor } from './interceptors/auth.interceptor';
     RentalComponent,
     CarAddComponent,
     LoginComponent,
+    CardtoComponent,
+    FooterComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
